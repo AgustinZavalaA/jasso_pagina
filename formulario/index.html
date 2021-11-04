@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey for Product X</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="center">
+
+        <h1>Survey for Product X</h1>
+        <form action="secondPage.html" method="get">
+            <label for="name">Nombre*: </label>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <label for="car">Selecciona uno*:</label>
+            <br>
+            <div>
+                <img class="img" src="img/tsuru.jpg" alt="">
+                <input type="radio" name="cars" id="opt1" required>
+                <label for="opt1">Opcion 1</label>
+                <img class="img" src="img/vocho.jpg" alt="">
+                <input type="radio" name="cars" id="opt2" required>
+                <label for="opt2">Opcion 2</label>
+                <img class="img" src="img/vocho2.jpeg" alt="">
+                <input type="radio" name="cars" id="opt3" required>
+                <label for="opt3">Opcion 3</label>
+            </div>
+            
+            <br>
+            <input style="background-color: rgb(248, 170, 24);" type="submit" value="Siguiente">
+        </form>
+    </div>
+</body>
+</html>

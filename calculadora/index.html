@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <h1>CALCULADORA</h1>
+    <div class="container">
+        <div class="sixth">
+            <button onclick="calc('add');">SUMA</button>
+        </div>
+        <div class="sixth">
+            <button onclick="calc('sub');">RESTA</button>
+        </div>
+        <div class="sixth">
+            <button onclick="calc('mul');">MULTIPLICACION</button>
+        </div>
+        <div class="sixth">
+            <button onclick="calc('div');">DIVISION</button>
+        </div>
+        <div class="sixth">
+            <button onclick="calc('pro');">PROMEDIO</button>
+        </div>
+        <div class="sixth">
+            <button onclick="calc('std');">DESV. STD</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="add" class="center_div" hidden>
+        <label for="n1">Numero 1</label>
+        <input type="number" name="n1" id="add-n1">
+        <br>
+        <br>
+        <label for="n2">Numero 2</label>
+        <input type="number" name="n2" id="add-n2">
+        <br>
+        <br>
+        <button onclick="suma();">CALCULAR</button>
+        <br>
+        <br>
+        <h1 id="add-res"></h1>
+    </div>
+
+    <div id="sub" class="center_div" hidden>
+        <label for="n1">Numero 1</label>
+        <input type="number" name="n1" id="sub-n1">
+        <br>
+        <br>
+        <label for="n2">Numero 2</label>
+        <input type="number" name="n2" id="sub-n2">
+        <br>
+        <br>
+        <button onclick="resta();">CALCULAR</button>
+        <br>
+        <br>
+        <h1 id="sub-res"></h1>
+    </div>
+
+    <div id="mul" class="center_div" hidden>
+        <label for="n1">Numero 1</label>
+        <input type="number" name="n1" id="mul-n1">
+        <br>
+        <br>
+        <label for="n2">Numero 2</label>
+        <input type="number" name="n2" id="mul-n2">
+        <br>
+        <br>
+        <button onclick="multiplicacion();">CALCULAR</button>
+        <br>
+        <br>
+        <h1 id="mul-res"></h1>
+    </div>
+
+    <div id="div" class="center_div" hidden>
+        <label for="n1">Numero 1</label>
+        <input type="number" name="n1" id="div-n1">
+        <br>
+        <br>
+        <label for="n2">Numero 2</label>
+        <input type="number" name="n2" id="div-n2">
+        <br>
+        <br>
+        <button onclick="division();">CALCULAR</button>
+        <br>
+        <br>
+        <h1 id="div-res"></h1>
+    </div>
+
+    <div id="pro" class="center_div" hidden>
+        <label for="n2">Numero de elementos</label>
+        <input type="number" name="n2" id="pro-n2">
+        <br>
+        <br>
+        <button onclick="generar_promedio();">Generar</button>
+        <br>
+        <br>
+        <h1 id="pro-res"></h1>
+    </div>
+
+    <div id="std" class="center_div" hidden>
+        <label for="n2">Numero de elementos</label>
+        <input type="number" name="n2" id="std-n2">
+        <br>
+        <br>
+        <button onclick="generar_desviacion();">Generar</button>
+        <br>
+        <br>
+        <h1 id="std-res"></h1>
+    </div>
+</body>
+</html>

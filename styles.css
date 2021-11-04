@@ -1,0 +1,32 @@
+.title {
+  text-align: center;
+  color: aquamarine;
+}
+.subtitle {
+  text-align: start;
+  color: cadetblue;
+}
+
+.normal-text {
+  text-align: justify;
+  color: bisque;
+}
+
+body {
+  background-color: rgb(26, 24, 24);
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.center {
+  background-color: rgb(11, 32, 49);
+  margin: auto;
+  width: 70%;
+  border: 3px solid rgb(26, 1, 27);
+  padding: 15px;
+}

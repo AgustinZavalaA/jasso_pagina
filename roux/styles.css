@@ -1,0 +1,157 @@
+.center {
+  /* background-color: rgb(245, 242, 238); */
+  /* margin: auto; */
+  width: 100%;
+  /* border: 3px solid rgb(248, 170, 24); */
+  padding: -15px;
+}
+
+h1{
+  font-size: large;
+}
+
+.fiftyclass{
+  padding: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+  h1{
+    font-size: x-large;
+  }
+
+  .fiftyclass{
+    padding: 30px;
+  }
+  
+  .center {
+    /* background-color: rgb(245, 242, 238); */
+    margin: auto;
+    width: 80%;
+    /* border: 3px solid rgb(248, 170, 24); */
+    padding: -15px;
+  }
+
+  .bandita {
+    /* padding: 10px; */
+    background: rgb(182, 113, 38);
+    background: linear-gradient(
+      90deg,
+      rgba(182, 113, 38, 1) 46%,
+      rgba(231, 206, 65, 1) 100%
+    );
+  }
+
+  .img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 20px; */
+    /* margin: auto; */
+    width: 100%;
+  }
+  
+  .vis{
+    visibility: hidden;
+  }
+
+  .bandita {
+    padding: 10px;
+    font-size:x-large;
+    background: rgb(182, 113, 38);
+    background: linear-gradient(
+      90deg,
+      rgba(182, 113, 38, 1) 46%,
+      rgba(231, 206, 65, 1) 100%
+    );
+  }
+}
+
+.vis{
+  visibility: visible;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  padding-bottom: 10px;
+}
+
+footer {
+  background-color: rgb(59, 59, 59);
+  color: white;
+  padding: 20px;
+  /* height: 100px; */
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  /* margin: auto; */
+  width: 70%;
+}
+
+.imggrid {
+  display: block;
+  border-radius: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 20px; */
+  /* margin: auto; */
+  width: 90%;
+}
+
+.bandita {
+  padding: 2px;
+  font-size: small;
+  background: rgb(182, 113, 38);
+  background: linear-gradient(
+    90deg,
+    rgba(182, 113, 38, 1) 46%,
+    rgba(231, 206, 65, 1) 100%
+  );
+}
+
+.maindiv {
+  background-color: white;
+  /* padding: 10px; */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+#container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+#ten {
+  width: 10%;
+}
+#twenty {
+  width: 20%;
+}
+#twentyfive {
+  width: 25%;
+}
+#tirty {
+  width: 30%;
+}
+#fifty {
+  width: 50%;
+}
+#seventyfive {
+  width: 75%;
+}

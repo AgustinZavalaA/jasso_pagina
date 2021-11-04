@@ -1,0 +1,25 @@
+body {
+  background-color: gray;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.sixth {
+  display: flex;
+  width: 16%;
+  justify-content: center;
+  align-items: center;
+}
+
+.center_div {
+  text-align: center;
+  align-items: center;
+}
