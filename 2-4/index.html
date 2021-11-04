@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio IMC</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div>
+        <label>Peso en kg: </label>
+        <input type="text" name="" id="peso">
+    </div>
+
+    <div>
+        <label>Altura en m: </label>
+        <input type="text" name="" id="altura">
+    </div>
+
+    <div>
+        <input type="button" onclick="imc();" name="" value="calcular">
+    </div>
+
+    <h1 id="resultado">RES</h1>
+
+    <script type="text/javascript">
+        function imc() {
+            let peso = document.getElementById("peso");
+            let altura = document.getElementById("altura");
+            let resultado = document.getElementById("resultado");
+
+            let imc = peso.value / Math.pow(altura.value, 2);
+
+            let grupo = "";
+            if (imc < 18.5)
+                grupo = "Peso insuficiente";
+            else if (imc < 24.9)
+                grupo = "Peso normal";
+            else if (imc < 26.9)
+                grupo = "Sobrepeso grado I";
+            else if (imc < 29.9)
+                grupo = "Sobrepeso grado II";
+            else if (imc < 34.9)
+                grupo = "Obesidad tipo I";
+            else if (imc < 39.9)
+                grupo = "Obesidad tipo II";
+            else if (imc < 49.9)
+                grupo = "Obesidad tipo III";
+            else
+                grupo = "Obesidad tipo IV";
+
+            resultado.innerText = `Su IMC es : ${Math.round((imc + Number.EPSILON) * 100) / 100}\nUsted se encuentra en el grupo : ${grupo}`;
+        }
+    </script>
+</body>
+
+</html>
