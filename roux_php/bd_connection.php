@@ -1,10 +1,10 @@
 <?php
     $bd = 'roux';
     $servidor = 'localhost';
-    $user = 'root';
-    $pass = '';
+    $user = 'pmauser';
+    $pass = '1234';
 
-    $conn = mysqli_connect($servidor, $user, $pass, $bd, 8888);
+    $conn = mysqli_connect($servidor, $user, $pass, $bd);
 
     if(!$conn){
         die('Conexion fallo');
